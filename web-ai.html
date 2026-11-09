@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การประยุกต์ใช้ AI - แนะนำ AI สร้างเว็บ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: 
+        radial-gradient(circle at 50% 10%, rgba(0, 242, 254, 0.15) 0%, transparent 50%);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+      width: 100%;
+    }
+    .tool-detail {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .tool-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .tool-info h3 { font-size: 1.5rem; color: var(--text-main); margin-bottom: 0.5rem; }
+    .tool-info p { color: var(--text-sub); line-height: 1.6; margin-bottom: 1rem; }
+    .feature-list { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .badge {
+      background: rgba(157, 78, 221, 0.15);
+      color: #c77dff;
+      border: 1px solid rgba(157, 78, 221, 0.3);
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    .steps-section {
+      margin-top: 3.5rem;
+      background: rgba(22, 27, 34, 0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+    }
+    .steps-section h3 { font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center; color: var(--primary-cyan); }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .step-item { text-align: center; padding: 1rem; }
+    .step-number {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+      color: #000; font-weight: 700; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .step-item h4 { margin-bottom: 0.5rem; }
+    .step-item p { color: var(--text-sub); font-size: 0.9rem; line-height: 1.5; }
+    @media (max-width: 600px) { .tool-detail { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">⚡ AI Application</div>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="menu.html">เมนูเอไอ</a></li>
+        <li><a href="web-ai.html" class="active">แนะนำ AI สร้างเว็บ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="center-banner">
+    <img src="images/banner.jpg" alt="การประยุกต์ใช้ AI">
+  </div>
+
+  <main class="container">
+    <div class="tool-detail">
+      <div class="tool-icon">⚡</div>
+      <div class="tool-info">
+        <h3>v0.dev (โดย Vercel)</h3>
+        <p>AI ที่ถูกออกแบบมาเพื่อสร้าง UI Components และหน้าเว็บด้วย Generative UI เพียงพิมพ์อธิบายรูปหน้าเว็บที่ต้องการ ระบบจะเจนเนอเรตโค้ด HTML, Tailwind CSS และ React ให้อย่างมีคุณภาพทันที</p>
+        <div class="feature-list">
+          <span class="badge">✨ รองรับ Tailwind CSS</span>
+          <span class="badge">⚡ พรีวิวแบบ Real-time</span>
+          <span class="badge">📦 Export โค้ดได้ง่าย</span>
+        </div>
+        <a href="https://v0.dev" target="_blank" rel="noopener noreferrer" class="try-btn">ไปทดลองใช้ v0.dev ➔</a>
+      </div>
+    </div>
+
+    <div class="tool-detail">
+      <div class="tool-icon">🎨</div>
+      <div class="tool-info">
+        <h3>Framer AI</h3>
+        <p>เครื่องมือออกแบบและจัดทำเว็บไซต์แบบ Visual Builder ที่ผสานพลัง AI สามารถเนรมิตเว็บไซต์ทั้งหน้า (Landing Page) พร้อมแอนิเมชันและเอฟเฟกต์การแสดงผลที่สวยงามทันสมัยจาก Prompt สั้นๆ</p>
+        <div class="feature-list">
+          <span class="badge">✨ Responsive อัตโนมัติ</span>
+          <span class="badge">🎨 แอนิเมชันเนียนตา</span>
+          <span class="badge">🚀 Publish ได้ทันที</span>
+        </div>
+        <a href="https://www.framer.com" target="_blank" rel="noopener noreferrer" class="try-btn">ไปทดลองใช้ Framer AI ➔</a>
+      </div>
+    </div>
+
+    <div class="tool-detail">
+      <div class="tool-icon">🤖</div>
+      <div class="tool-info">
+        <h3>Claude & ChatGPT</h3>
+        <p>ผู้ช่วยเขียนโค้ดและแก้บั๊กอัจฉริยะ สามารถสั่งให้ช่วยวางโครงสร้าง HTML, เขียนคำสั่ง CSS ตกแต่งสไตล์ รวมถึงเขียน JavaScript เพิ่มลูกเล่นแบบ Interactive ให้กับเว็บไซต์ได้ครบวงจร</p>
+        <div class="feature-list">
+          <span class="badge">✨ เขียนโค้ด HTML/CSS/JS</span>
+          <span class="badge">🛠️ ช่วย Debug แก้ไขจุดผิดพลาด</span>
+          <span class="badge">💡 วางโครงสร้าง Layout</span>
+        </div>
+        <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="try-btn">ไปทดลองใช้ Claude ➔</a>
+      </div>
+    </div>
+
+    <section class="steps-section">
+      <h3>ขั้นตอนง่ายๆ ในการใช้ AI สร้างเว็บไซต์</h3>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h4>วางคอนเซปต์</h4>
+          <p>กำหนดหัวข้อ และโครงสร้างหน้าที่ต้องการ</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h4>เขียน Prompt</h4>
+          <p>ระบุความต้องการ โทนสี และสไตล์อย่างชัดเจน</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h4>Generate & Edit</h4>
+          <p>นำโค้ดที่ได้มาปรับแต่งต่อด้วยตนเอง</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AI Application Portal - สื่อเรียนรู้การประยุกต์ใช้ปัญญาประดิษฐ์</p>
+  </footer>
+</body>
+</html>

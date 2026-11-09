@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การประยุกต์ใช้ AI - หน้าเมนูรวมเครื่องมือ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: 
+        radial-gradient(circle at 85% 20%, rgba(0, 242, 254, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 15% 80%, rgba(157, 78, 221, 0.12) 0%, transparent 40%);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+      width: 100%;
+    }
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .ai-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.8rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .ai-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-neon);
+      box-shadow: 0 8px 25px rgba(0, 255, 204, 0.15);
+    }
+    .tag {
+      align-self: flex-start;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(0, 242, 254, 0.15);
+      color: var(--primary-cyan);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      margin-bottom: 1rem;
+    }
+    .ai-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
+    .ai-card p {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+    .use-case {
+      font-size: 0.85rem;
+      color: var(--accent-neon);
+      background: rgba(0, 255, 204, 0.05);
+      padding: 0.6rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-neon);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">⚡ AI Application</div>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="menu.html" class="active">เมนูเอไอ</a></li>
+        <li><a href="web-ai.html">แนะนำ AI สร้างเว็บ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="center-banner">
+    <img src="images/banner.jpg" alt="การประยุกต์ใช้ AI">
+  </div>
+
+  <main class="container">
+    <div class="ai-grid">
+      <div class="ai-card">
+        <span class="tag">Chat & Text</span>
+        <h3>ChatGPT / Claude</h3>
+        <p>โมเดลภาษาขนาดใหญ่ (LLM) มีความเชี่ยวชาญในการเขียนข้อความ สรุปเนื้อหา ตอบคำถาม และช่วยเขียนโค้ดโปรแกรม</p>
+        <div class="use-case">🎯 เหมาะสำหรับ: เขียนบทความ, แปลภาษา, ช่วยคิดไอเดีย</div>
+        <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="try-btn">ลองใช้งาน ChatGPT ➔</a>
+      </div>
+
+      <div class="ai-card">
+        <span class="tag">Image & Art</span>
+        <h3>Midjourney / DALL-E 3</h3>
+        <p>สร้างภาพวาด กราฟิก และภาพถ่ายสุดอลังการด้วยการพิมพ์คำอธิบายภาพ (Text-to-Image)</p>
+        <div class="use-case">🎯 เหมาะสำหรับ: งานออกแบบคอนเซปต์, ภาพประกอบสื่อ</div>
+        <a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer" class="try-btn">ลองใช้งาน Midjourney ➔</a>
+      </div>
+
+      <div class="ai-card">
+        <span class="tag">Web & Coding</span>
+        <h3>v0.dev / GitHub Copilot</h3>
+        <p>เครื่องมือช่วยเขียนโค้ดและสร้างส่วนประกอบ UI ของเว็บไซต์โดยอัตโนมัติ ช่วยลดเวลาเขียน HTML/CSS</p>
+        <div class="use-case">🎯 เหมาะสำหรับ: นักพัฒนาเว็บ, UI/UX Designer</div>
+        <a href="https://v0.dev" target="_blank" rel="noopener noreferrer" class="try-btn">ลองใช้งาน v0.dev ➔</a>
+      </div>
+
+      <div class="ai-card">
+        <span class="tag">Video & Motion</span>
+        <h3>Runway Gen-2 / Sora</h3>
+        <p>เครื่องมือสร้างและแก้ไขวิดีโอด้วยพลัง AI สามารถแปลงข้อความหรือภาพนิ่งให้กลายเป็นวิดีโอภาพเคลื่อนไหว</p>
+        <div class="use-case">🎯 เหมาะสำหรับ: ตัดต่อวิดีโอ, ทำคลิปโปรโมตสินค้า</div>
+        <a href="https://runwayml.com" target="_blank" rel="noopener noreferrer" class="try-btn">ลองใช้งาน Runway ➔</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 AI Application Portal - สื่อเรียนรู้การประยุกต์ใช้ปัญญาประดิษฐ์</p>
+  </footer>
+</body>
+</html>

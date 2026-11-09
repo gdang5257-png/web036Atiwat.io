@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การประยุกต์ใช้ AI - หน้าแรก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 242, 254, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(157, 78, 221, 0.12) 0%, transparent 40%);
+    }
+    .hero-btn-wrap {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(0, 242, 254, 0.7);
+    }
+    .features-grid {
+      max-width: 1200px;
+      margin: 0 auto 4rem;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary-cyan);
+      box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15);
+    }
+    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .card h3 { font-size: 1.4rem; margin-bottom: 0.8rem; color: var(--text-main); }
+    .card p { color: var(--text-sub); line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">⚡ AI Application</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+        <li><a href="menu.html">เมนูเอไอ</a></li>
+        <li><a href="web-ai.html">แนะนำ AI สร้างเว็บ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 🖼️ ใส่รูปภาพแบนเนอร์ตรงกลางแทนที่ข้อความหัวข้อเดิม -->
+    <div class="center-banner">
+      <img src="images/banner.jpg" alt="การประยุกต์ใช้ AI">
+    </div>
+
+    <div class="hero-btn-wrap">
+      <a href="menu.html" class="hero-btn">สำรวจเครื่องมือ AI ➔</a>
+    </div>
+
+    <section class="features-grid">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>เพิ่มความเร็วในการทำงาน</h3>
+        <p>ช่วยลดเวลาในกระบวนการซ้ำซาก เช่น การสรุปเอกสาร การตอบคำถาม และการเขียนโค้ดเบื้องต้น</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>ปลดปล่อยจินตนาการ</h3>
+        <p>เนรมิตงานกราฟิก วิดีโอ และเสียงดนตรีได้ในเวลาไม่กี่วินาทีเพียงพิมพ์ข้อความอธิบาย (Prompt)</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>สร้างเว็บไซต์อัจฉริยะ</h3>
+        <p>สร้างโครงสร้างเว็บ ดีไซน์ UI และแปลงไฟล์แบบร่างเป็นโค้ด HTML/CSS ได้อย่างง่ายดาย</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AI Application Portal - สื่อเรียนรู้การประยุกต์ใช้ปัญญาประดิษฐ์</p>
+  </footer>
+</body>
+</html>
